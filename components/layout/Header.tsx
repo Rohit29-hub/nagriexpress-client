@@ -1,6 +1,8 @@
-import { Search, ShoppingCart, User } from 'lucide-react'
+import {ShoppingCart} from 'lucide-react'
 import Image from 'next/image'
+import SearchBar from '../ui/SearchBar'
 import React from 'react'
+import Signup from '../ui/Signup'
 
 const Header = () => {
   return (
@@ -18,27 +20,10 @@ const Header = () => {
         <div className='w-full h-full flex items-center gap-x-4'>
           {/* search bar field */}
           <div className='w-auto h-full flex-1 py-1.5'>
-            <div className='flex w-auto items-center relative overflow-hidden rounded-full h-full'>
-              <input
-                type='text'
-                placeholder='Search NagriExpress'
-                className='w-full h-10 md:h-full px-4 text-black bg-white  focus:outline-none'
-              />
-              <div className='absolute right-0  px-3 h-full flex items-center justify-center'>
-                <Search color='black'/>
-              </div>
-            </div>
+            <SearchBar/>
           </div>
           {/* user login and dashboard */}
-          <div className='w-auto h-full'>
-            <div className='w-full h-full flex items-center gap-x-2'>
-              <User/>
-              <div className='lg:block hidden'>
-                <h1 className='text-sm font-medium'>Sign in</h1>
-                <h1 className='text-sm font-medium'>Account & List</h1>
-              </div>
-            </div>
-          </div>
+          <Signup/>
           {/* user cart and orders */}
           <div className='w-auto h-full'>
             <div className='w-full h-full flex items-center gap-x-2'>
