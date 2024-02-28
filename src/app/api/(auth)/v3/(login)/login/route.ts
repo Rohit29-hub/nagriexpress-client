@@ -2,7 +2,6 @@ import {NextRequest, NextResponse}  from 'next/server'
 import userModel from '@/src/models/user.model'
 export async function POST(req:NextRequest){
     const body = await req.json();
-
     try{
         const user = await userModel.findOne({
             email: body.email
@@ -30,10 +29,10 @@ export async function POST(req:NextRequest){
                 firstName: user.firstName,
                 lastName: user.lastName,
                 email: user.email,
+                role: user.role
             },
             status: 200
         })
-
     }catch(err: any){
         return NextResponse.json({
             message: err.message,

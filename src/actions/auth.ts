@@ -3,12 +3,12 @@ import { cookies } from "next/headers"
 import { redirect } from "next/navigation"
 import jwt from 'jsonwebtoken'
 
-const encrypt = (input: object): string => {
+export const encrypt = (input: object): string => {
     const encrypt_string = jwt.sign(input, process.env.JWT_SECRET)
     return encrypt_string;
 }
 
-const decrypt = (encrypt_session: string) => {
+export const decrypt = (encrypt_session: string) => {
     try {
         const decrypt_data = jwt.verify(encrypt_session, process.env.JWT_SECRET)
         return decrypt_data;
@@ -32,7 +32,6 @@ const register = async (prevState: any, formData: FormData) => {
     }
 
     try {
-
         for (let field in user) {
             if (user[field] == '') {
                 throw new Error(`Please add this field. Because ${field} is empty.`)
@@ -52,8 +51,8 @@ const register = async (prevState: any, formData: FormData) => {
         const { data, message, status } = await response.json();
 
         if(status == 200){
+            console.log(data);
             const encryption_session = encrypt(data);
-
             // make a session
             cookieStore.set('session', encryption_session, {
                 httpOnly: true,
@@ -78,7 +77,7 @@ const register = async (prevState: any, formData: FormData) => {
 }
 
 const signIn = async (prevState: any, formData: FormData) => {
-    const cookieStore = cookies()
+    const cookieStore = cookies();
     const user = {
         email: formData.get('email')?.toString(),
         password: formData.get('password')?.toString()
@@ -130,8 +129,9 @@ const signOut = async () => {
 const useSession = () => {
     const cookieStore = cookies();
     const encryptedSessionData = cookieStore.get('session')?.value;
-    return encryptedSessionData ? decrypt(encryptedSessionData) : null
+    if(!encryptedSessionData) return null;
+    const data = decrypt(encryptedSessionData);
+    return data;
 }
-
 
 export {register,signIn,signOut,useSession}

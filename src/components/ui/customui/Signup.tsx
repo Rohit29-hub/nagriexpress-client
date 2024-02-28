@@ -26,10 +26,10 @@ const Signup = () => {
                     </NavigationMenuTrigger>
                         <NavigationMenuContent className=''>
                             <ul className="w-28 h-auto p-2 flex flex-col gap-y-2">
-                                <Link href={'/profile'}>
+                                <Link href={'/profile/1234'}>
                                     <NavigationMenuLink className='flex items-center gap-x-3 '>
                                         <CircleUserRound strokeWidth={1}/>
-                                        <Link href={'/profile/1234'} className='text-sm font-medium'>Profile</Link>
+                                        <p className='text-sm font-medium'>Profile</p>
                                     </NavigationMenuLink>
                                 </Link>
                                 <Link href={'/wishlist'}>

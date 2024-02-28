@@ -1,4 +1,4 @@
-import  {Schema,model,models} from 'mongoose';
+import { Schema, model, models } from 'mongoose';
 
 const productSchema = new Schema({
     title: {
@@ -7,49 +7,49 @@ const productSchema = new Schema({
     },
     category: {
         type: String,
-        required: true 
+        required: true
     },
-    brand: { 
+    brand: {
         type: String,
-        required: true 
+        required: true
     },
-    description: { 
-        type: String, 
-        required: true 
+    description: {
+        type: String,
+        required: true
     },
-    color: { 
-        type: String, 
-        required: true 
+    color: {
+        type: String,
+        required: true
     },
     size: [
-        { 
-        type: String,
-        required: true 
+        {
+            type: String,
+            required: true
         }],
-    price: { 
-        type: Number, 
-        required: true 
+    price: {
+        type: Number,
+        required: true
     },
-    discount: { 
-        type: Number, 
-        default: 0 
+    discount: {
+        type: Number,
+        default: 0
     },
-    images: [{ 
-        type: String, 
-        required: true 
+    images: [{
+        type: String,
+        required: true
     }],
-    stock: { 
-        type: Number, 
-        required: true 
+    stock: {
+        type: Number,
+        required: true
     },
     ratings: {
-        average: { 
-            type: Number, 
-            default: 0 
+        average: {
+            type: Number,
+            default: 0
         },
-        count: { 
-            type: Number, 
-            default: 0 
+        count: {
+            type: Number,
+            default: 0
         }
     },
     reviews: [{
@@ -58,27 +58,18 @@ const productSchema = new Schema({
         comment: { type: String }
     }],
 
-    tags: [{ 
-        type: String 
+    tags: [{
+        type: String
     }],
 
     shipping_info: {
         weight: { type: String },
         dimensions: { type: String },
         shipping_cost: { type: Number },
-        estimated_delivery: { type: String }
-    },
-
-    material: { 
-        type: String 
-    },
-
-    care_instructions: { 
-        type: String 
-    },
-    
-    country_of_origin: { 
-        type: String 
+        estimated_delivery: { type: String },
+        material: {type: String},
+        care_instructions: {type: String},
+        country_of_origin: {type: String},
     },
     model_info: {
         height: { type: String },

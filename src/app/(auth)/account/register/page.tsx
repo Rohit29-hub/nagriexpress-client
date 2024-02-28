@@ -10,7 +10,7 @@ const Register = () => {
   return (
     <div>
       <UserData />
-      <Link href={'/login'} className='underline mt-3'>Already have an account</Link>
+      <Link href={'/account/login'} className='underline mt-3'>Already have an account</Link>
     </div>
   )
 }

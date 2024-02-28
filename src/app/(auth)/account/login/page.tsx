@@ -11,6 +11,7 @@ const initialState = {
 }
 const LoginPage = () => {
     const [state, formAction] = useFormState(signIn, initialState);
+    
     if (state.message != '') {
         if (state.status == 200) {
             toast.success(state.message);
@@ -25,7 +26,7 @@ const LoginPage = () => {
             <input type="password" name="password" id="password" placeholder='enter your password' />
             <button type='submit' className='py-2 mt-4 px-3 bg-blue-600 text-white rounded'>Login</button>
         </form>
-        <Link href={'/register'} className='underline mt-3'>Don't have an account</Link>
+        <Link href={'/account/register'} className='underline mt-3'>Don't have an account</Link>
     </div>
   )
 }

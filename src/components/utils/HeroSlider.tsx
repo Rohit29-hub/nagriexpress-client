@@ -10,7 +10,7 @@ import Image from 'next/image'
 import data from '@/src/data/banner.json'
 const HeroSlider = () => {
     return (
-        <div className='flex items-center justify-center w-full h-auto p-2'>
+        <div className='flex items-center justify-center w-full h-auto md:p-2'>
             <Carousel opts={{
                 loop: true,
             }} orientation="horizontal" className='w-full mb-10 lg:mb-0 lg:w-full flex items-center justify-center'>

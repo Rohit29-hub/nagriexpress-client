@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import "@/src/font/customFont.css";
 import Header from "@/src/components/layout/Header";
 import { ThemeProvider } from "@/src/components/ui/theme-provider"
 import { Toaster } from 'react-hot-toast'

@@ -1,18 +1,261 @@
 [
     {
-        "title": "t-shirts",
-        "category": "cloths"
+        "title": "Cotton T-Shirt",
+        "category": "T-Shirts",
+        "brand": "Adidas",
+        "description": "Comfortable cotton t-shirt for casual wear.",
+        "color": "White",
+        "size": ["S", "M", "L"],
+        "price": 29.99,
+        "discount": 0,
+        "images": ["tshirt_image1.jpg", "tshirt_image2.jpg"],
+        "stock": 100,
+        "ratings": { "average": 4, "count": 15 },
+        "reviews": [
+            { "username": "casual123", "rating": 4, "comment": "Nice fit and soft material. Would buy again.", "_id": "65d22310120579de87ce59fe" },
+            { "username": "fashionista456", "rating": 3, "comment": "Good quality but the sizing runs a bit small.", "_id": "65d22310120579de87ce59ff" }
+        ],
+        "tags": ["casual", "comfortable", "cotton"],
+        "shipping_info": {
+            "weight": "0.2 kg",
+            "dimensions": "10x8x2 inches",
+            "shipping_cost": 3.99,
+            "estimated_delivery": "1-2 business days",
+            "material": "Cotton",
+            "care_instructions": "Machine wash cold, tumble dry low",
+            "country_of_origin": "Bangladesh"
+        },
+        "model_info": { "height": "5 feet 10 inches", "size_worn": "M" }
+    },
+
+    {
+        "title": "Hooded Sweatshirt",
+        "category": "Sweatshirts",
+        "brand": "Nike",
+        "description": "Warm hooded sweatshirt for everyday use.",
+        "color": "Black",
+        "size": ["S", "M", "L", "XL"],
+        "price": 49.99,
+        "discount": 0,
+        "images": ["hoodie_image1.jpg", "hoodie_image2.jpg"],
+        "stock": 50,
+        "ratings": { "average": 4.5, "count": 10 },
+        "reviews": [
+          { "username": "active_wearer", "rating": 5, "comment": "Super comfy and warm, love it!", "_id": "65d22310120579de87ce59f1" },
+          { "username": "sporty_gal", "rating": 4, "comment": "Great for outdoor activities.", "_id": "65d22310120579de87ce59f2" }
+        ],
+        "tags": ["hoodie", "warm", "casual"],
+        "shipping_info": {
+          "weight": "0.5 kg",
+          "dimensions": "12x10x3 inches",
+          "shipping_cost": 4.99,
+          "estimated_delivery": "2-3 business days",
+          "material": "Cotton Blend",
+          "care_instructions": "Machine wash warm, tumble dry low",
+          "country_of_origin": "Vietnam"
+        },
+        "model_info": { "height": "6 feet", "size_worn": "L" }
     },
     {
-        "title": "shirt",
-        "category": "cloths"
+        "title": "Denim Jeans",
+        "category": "Jeans",
+        "brand": "Levi's",
+        "description": "Classic denim jeans for a timeless look.",
+        "color": "Blue",
+        "size": ["28x30", "30x32", "32x34", "34x36"],
+        "price": 59.99,
+        "discount": 10,
+        "images": ["jeans_image1.jpg", "jeans_image2.jpg"],
+        "stock": 75,
+        "ratings": { "average": 4.2, "count": 8 },
+        "reviews": [
+          { "username": "denim_lover", "rating": 5, "comment": "Excellent quality, perfect fit!", "_id": "65d22310120579de87ce59f3" },
+          { "username": "fashion_forward", "rating": 4, "comment": "Love the style and comfort.", "_id": "65d22310120579de87ce59f4" }
+        ],
+        "tags": ["denim", "classic", "timeless"],
+        "shipping_info": {
+          "weight": "0.7 kg",
+          "dimensions": "14x12x4 inches",
+          "shipping_cost": 5.99,
+          "estimated_delivery": "3-5 business days",
+          "material": "Denim",
+          "care_instructions": "Machine wash cold, tumble dry low",
+          "country_of_origin": "Mexico"
+        },
+        "model_info": { "height": "5 feet 8 inches", "size_worn": "30x32" }
+      },
+      {
+        "title": "Slim Fit Chinos",
+        "category": "Pants",
+        "brand": "Dockers",
+        "description": "Modern slim fit chinos for a sleek look.",
+        "color": "Beige",
+        "size": ["30x30", "32x32", "34x34", "36x36"],
+        "price": 39.99,
+        "discount": 0,
+        "images": ["chinos_image1.jpg", "chinos_image2.jpg"],
+        "stock": 80,
+        "ratings": { "average": 4.3, "count": 7 },
+        "reviews": [
+          { "username": "stylish_guy", "rating": 4, "comment": "Nice fit and good quality material.", "_id": "65d22310120579de87ce59f7" },
+          { "username": "fashion_enthusiast", "rating": 4, "comment": "Versatile pants, great for casual or business casual.", "_id": "65d22310120579de87ce59f8" }
+        ],
+        "tags": ["chinos", "slim fit", "modern"],
+        "shipping_info": {
+          "weight": "0.6 kg",
+          "dimensions": "13x11x4 inches",
+          "shipping_cost": 5.29,
+          "estimated_delivery": "3-5 business days",
+          "material": "Cotton Blend",
+          "care_instructions": "Machine wash warm, tumble dry low",
+          "country_of_origin": "China"
+        },
+        "model_info": { "height": "5 feet 11 inches", "size_worn": "32x32" }
+      },
+      {
+        "title": "Leather Belt",
+        "category": "Accessories",
+        "brand": "Tommy Hilfiger",
+        "description": "Classic leather belt for everyday use.",
+        "color": "Brown",
+        "size": ["30", "32", "34", "36"],
+        "price": 34.99,
+        "discount": 0,
+        "images": ["belt_image1.jpg", "belt_image2.jpg"],
+        "stock": 90,
+        "ratings": { "average": 4.6, "count": 5 },
+        "reviews": [
+          { "username": "belt_lover", "rating": 5, "comment": "High-quality leather and stylish design.", "_id": "65d22310120579de87ce59f9" },
+          { "username": "fashion_icon", "rating": 4, "comment": "Great addition to any outfit.", "_id": "65d22310120579de87ce59fa" }
+        ],
+        "tags": ["leather", "belt", "classic"],
+        "shipping_info": {
+          "weight": "0.3 kg",
+          "dimensions": "11x3x1 inches",
+          "shipping_cost": 3.79,
+          "estimated_delivery": "1-3 business days",
+          "material": "Leather",
+          "care_instructions": "Wipe clean with a damp cloth",
+          "country_of_origin": "India"
+        },
+        "model_info": { "height": "6 feet", "size_worn": "34" }
+      },
+      {
+        "title": "Polo Shirt",
+        "category": "Shirts",
+        "brand": "Ralph Lauren",
+        "description": "Classic polo shirt for a preppy look.",
+        "color": "Navy Blue",
+        "size": ["XS", "S", "M", "L"],
+        "price": 44.99,
+        "discount": 0,
+        "images": ["polo_image1.jpg", "polo_image2.jpg"],
+        "stock": 70,
+        "ratings": { "average": 4.1, "count": 6 },
+        "reviews": [
+          { "username": "preppy_guy", "rating": 4, "comment": "Great quality and fits well.", "_id": "65d22310120579de87ce59fb" },
+          { "username": "fashionista", "rating": 4, "comment": "Love the classic style.", "_id": "65d22310120579de87ce59fc" }
+        ],
+        "tags": ["polo", "preppy", "classic"],
+        "shipping_info": {
+          "weight": "0.4 kg",
+          "dimensions": "12x9x2 inches",
+          "shipping_cost": 4.29,
+          "estimated_delivery": "2-4 business days",
+          "material": "Cotton",
+          "care_instructions": "Machine wash cold, tumble dry low",
+          "country_of_origin": "Vietnam"
+        },
+        "model_info": { "height": "5 feet 9 inches", "size_worn": "M" }
+      },
+      {
+        "title": "Denim Jacket",
+        "category": "Jackets",
+        "brand": "Wrangler",
+        "description": "Classic denim jacket for a rugged look.",
+        "color": "Dark Wash",
+        "size": ["XS", "S", "M", "L"],
+        "price": 69.99,
+        "discount": 0,
+        "images": ["jacket_image1.jpg", "jacket_image2.jpg"],
+        "stock": 55,
+        "ratings": { "average": 4.7, "count": 9 },
+        "reviews": [
+          { "username": "denim_fanatic", "rating": 5, "comment": "Love the rugged look and durable material.", "_id": "65d22310120579de87ce59fd" },
+          { "username": "style_savvy", "rating": 4, "comment": "Great for layering, fits true to size.", "_id": "65d22310120579de87ce59fe" }
+        ],
+        "tags": ["denim", "jacket", "rugged"],
+        "shipping_info": {
+          "weight": "0.8 kg",
+          "dimensions": "14x10x4 inches",
+          "shipping_cost": 6.49,
+          "estimated_delivery": "3-5 business days",
+          "material": "Denim",
+          "care_instructions": "Machine wash cold, tumble dry low",
+          "country_of_origin": "Mexico"
+        },
+        "model_info": { "height": "6 feet 1 inch", "size_worn": "L" }
+      }
+,{
+    "title": "Casual Sneakers",
+    "category": "Shoes",
+    "brand": "Converse",
+    "description": "Classic canvas sneakers for casual wear.",
+    "color": "White",
+    "size": ["US 6", "US 7", "US 8", "US 9"],
+    "price": 54.99,
+    "discount": 0,
+    "images": ["sneakers_image1.jpg", "sneakers_image2.jpg"],
+    "stock": 65,
+    "ratings": { "average": 4.4, "count": 11 },
+    "reviews": [
+      { "username": "sneakerhead", "rating": 5, "comment": "Love these shoes, classic style.", "_id": "65d22310120579de87ce59ff" },
+      { "username": "casual_chic", "rating": 4, "comment": "Comfy and versatile, goes with everything.", "_id": "65d22310120579de87ce5a00" }
+    ],
+    "tags": ["sneakers", "casual", "canvas"],
+    "shipping_info": {
+      "weight": "0.5 kg",
+      "dimensions": "12x9x3 inches",
+      "shipping_cost": 4.99,
+      "estimated_delivery": "2-4 business days",
+      "material": "Canvas, Rubber",
+      "care_instructions": "Spot clean",
+      "country_of_origin": "Vietnam"
     },
-    {
-        "title": "nike",
-        "category": "shoes"
+    "model_info": { "height": "5 feet 10 inches", "size_worn": "US 9" }
+  }
+,
+{
+    "title": "Crewneck Sweatshirt",
+    "category": "Sweatshirts",
+    "brand": "H&M",
+    "description": "Soft and cozy crewneck sweatshirt for everyday wear.",
+    "color": "Heather Gray",
+    "size": ["XS", "S", "M", "L"],
+    "price": 34.99,
+    "discount": 0,
+    "images": ["crewneck_image1.jpg", "crewneck_image2.jpg"],
+    "stock": 85,
+    "ratings": { "average": 4.0, "count": 6 },
+    "reviews": [
+      { "username": "sweater_weather", "rating": 4, "comment": "Love the soft material and perfect fit.", "_id": "65d22310120579de87ce5a01" },
+      { "username": "cozy_vibes", "rating": 4, "comment": "Great for lounging around, very comfy.", "_id": "65d22310120579de87ce5a02" }
+    ],
+    "tags": ["crewneck", "cozy", "soft"],
+    "shipping_info": {
+      "weight": "0.5 kg",
+      "dimensions": "12x10x3 inches",
+      "shipping_cost": 4.49,
+      "estimated_delivery": "2-4 business days",
+      "material": "Cotton Blend",
+      "care_instructions": "Machine wash warm, tumble dry low",
+      "country_of_origin": "China"
     },
-    {
-        "title": "laptop",
-        "category": "electronics"
-    }
+    "model_info": { "height": "5 feet 9 inches", "size_worn": "M" }
+  }
+  
+                  
+      
+      
+          
 ]

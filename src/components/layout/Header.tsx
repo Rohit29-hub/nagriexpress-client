@@ -6,7 +6,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 const Header = () => {
   return (
-    <div className='w-full py-2 sm:py-0 md:h-14 h-auto dark:bg-[#ffffff6e] bg-[#4cc9f0]'>
+    <div className='w-full sticky top-0 backdrop-blur-[10px]  z-10 py-2 sm:py-0 md:h-14 h-auto dark:bg-[#ffffff98] bg-[#ffffff98]'>
       <div className='flex sm:flex-row flex-col sm:gap-y-0 gap-y-2 items-center w-full h-full gap-x-4 px-3'>
         <Link href={'/'} className='w-auto h-full flex items-center'>
           <Image

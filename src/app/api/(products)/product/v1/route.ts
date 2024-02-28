@@ -1,7 +1,6 @@
 import { NextRequest,NextResponse} from 'next/server'
 import productModel from '@/src/models/product.model'
 
-
 export async function GET(req: NextRequest, res: NextResponse) {
     try{
         const products = await productModel.find({}) || [];
@@ -46,9 +45,6 @@ export async function POST(req: NextRequest, res: NextResponse){
             reviews: data.reviews,
             tags: data.tags,
             shipping_info: data.shipping_info,
-            material: data.material,
-            care_instructions: data.care_instructions,
-            country_of_origin: data.country_of_origin,
             model_info: data.model_info
         })
 
@@ -56,7 +52,7 @@ export async function POST(req: NextRequest, res: NextResponse){
 
         return NextResponse.json({
             message: 'Product add successfully',
-            data: product._id,
+            data: [],
             status: 200,
         })
 
