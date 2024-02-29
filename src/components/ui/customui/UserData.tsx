@@ -4,6 +4,7 @@ import React from 'react'
 import { register } from '@/src/actions/auth'
 import { useFormState, useFormStatus } from 'react-dom'
 import toast from 'react-hot-toast'
+import { Input } from '../input'
 
 const initialState = {
     message: "",
@@ -29,10 +30,10 @@ const UserData = () => {
     return (
         <>
             <form action={formAction}>
-                <input type="text" name='firstName' placeholder='firstName here..' />
-                <input type="text" name='lastName' placeholder='lastName here..' />
-                <input type="email" name='email' placeholder='email here..' />
-                <input type="password" name='password' placeholder='password here..' />
+                <Input type="text" name='firstName' placeholder='firstName here..' />
+                <Input type="text" name='lastName' placeholder='lastName here..' />
+                <Input type="email" name='email' placeholder='email here..' />
+                <Input type="password" name='password' placeholder='password here..' />
                 <ButtonRegister />
             </form>
         </>

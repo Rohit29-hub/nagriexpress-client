@@ -4,7 +4,9 @@ import React from 'react'
 import Signup from '../ui/customui/Signup'
 import Image from 'next/image'
 import Link from 'next/link'
+import { getSession } from '@/src/actions/auth'
 const Header = () => {
+  const user = getSession();
   return (
     <div className='w-full sticky top-0 backdrop-blur-[10px]  z-10 py-2 sm:py-0 md:h-14 h-auto dark:bg-[#ffffff98] bg-[#ffffff98]'>
       <div className='flex sm:flex-row flex-col sm:gap-y-0 gap-y-2 items-center w-full h-full gap-x-4 px-3'>
@@ -21,7 +23,7 @@ const Header = () => {
           <div className='w-auto h-full flex-1 py-1.5'>
             <SearchBar />
           </div>
-          <Signup />
+          <Signup user={user}/>
           {/* user cart and orders */}
           <div className='w-auto h-full'>
             <div className='w-full h-full flex items-center gap-x-2'>

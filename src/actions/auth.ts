@@ -8,7 +8,7 @@ export const encrypt = (input: object): string => {
     return encrypt_string;
 }
 
-export const decrypt = (encrypt_session: string) => {
+export const decrypt = (encrypt_session: string): any => {
     try {
         const decrypt_data = jwt.verify(encrypt_session, process.env.JWT_SECRET)
         return decrypt_data;
@@ -126,7 +126,7 @@ const signOut = async () => {
     redirect('/')
 }
 
-const useSession = () => {
+const getSession = () => {
     const cookieStore = cookies();
     const encryptedSessionData = cookieStore.get('session')?.value;
     if(!encryptedSessionData) return null;
@@ -134,4 +134,4 @@ const useSession = () => {
     return data;
 }
 
-export {register,signIn,signOut,useSession}
+export {register,signIn,signOut,getSession}

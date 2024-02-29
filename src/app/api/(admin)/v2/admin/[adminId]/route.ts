@@ -5,7 +5,7 @@ export async function PUT(req: NextRequest, { params }: { params: { adminId: str
     const data = await req.json();
     try{
         const admin = await adminModel.findOneAndUpdate(
-            {_id: id},
+            {_id: adminId},
             {$set: data}
         )
 

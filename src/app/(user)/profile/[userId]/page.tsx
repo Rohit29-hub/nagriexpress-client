@@ -1,4 +1,4 @@
-import { useSession,signOut } from '@/src/actions/auth'
+import { getSession} from '@/src/actions/auth'
 import LogoutButton from '@/src/components/ui/customui/LogoutButton'
 import React from 'react'
 
@@ -10,7 +10,7 @@ interface Props {
 }
 
 const page = ({ params: { userId } }: Props) => {
-    const user = useSession();
+    const user = getSession();
     return (
         <div className='m-4'>
             <pre>
